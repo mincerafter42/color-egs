@@ -1,3 +1,4 @@
+CHARACTERS:
 elliot:
 hair:775013 (2002)
 skin:f8dea5 (2002)
@@ -10,7 +11,7 @@ tedd:
 hair:850085 (2002)
 skin:f8e7d6 (2002)
 shirt:keep the same (2002)
-jacket (overshirt?):6bbdfe (2002)
+overshirt:6bbdfe (2002)
 belt buckle:ffc600 (2002)
 pants:f7ad73 (2002)
 shoes: keep the same (2002,sketchbook)
@@ -35,14 +36,21 @@ shirt:bdffbd
 science teacher:
 hair:9e7b05 (2002-12-14)
 skin:fae7bf
+tongue:400000
 shirt:98fb9c
 belt buckle:808000
 pants and tie:0000c0
+
+principal:verrückt:
+skin:f0d2ae (2002-12-14)
+jacket:885001
+tie:791209
 
 goo:004101
 goo trail:08bd00 (2002-02-10)
 goo eyes:86ff84
 
+OBJECTS:
 hammer handle:947972 (2002-11-05 sketchbook)
 hammer head: gray (keep the same)
 
@@ -52,11 +60,18 @@ wood:845918 (2002-02-24)
 
 net:a8a09d (2002-09-29 sketchbook)
 
+fire:gradient from fe3308 to ffd231 (2002-02-10)
+
+BACKGROUNDS:
 moperville north ceiling:d5d5b3 (2002-09-23)
+wall:efefe3
 
 background colors: (used until 2002-03-03)
 c0c0ff
 c0ffc0
+c0ffff
 ffc0c0
 ffc0ff
 ffffc0
+
+dramatic backgrounds from goo fight: f00000,ff8a84,700000

@@ -2,8 +2,8 @@
 //has the comic's sequential number, and the URL of it on the egscomics.com server
 var alreadyColored={
 7:"20020127_pGFq.jpg",
-14:"20020203_hyJ6.png"/*,
-21:"20020210_BCBO.png",
+14:"20020203_hyJ6.png",
+21:"20020210_BCBO.png"/*,
 28:"20020217_nmtb.png",
 29:"20020218_Ezye.gif",
 35:"20020224_LVSJ.png",
