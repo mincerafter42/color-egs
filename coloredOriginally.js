@@ -6,7 +6,7 @@ var alreadyColored={
 21:"20020210_BCBO.png",
 28:"20020217_nmtb.png",
 29:"20020218_Ezye.gif",
-35:"20020224_LVSJ.png"/*,
-42:"20020303_lY9t.png",
+35:"20020224_LVSJ.png",
+42:"20020303_lY9t.png"/*,
 49:"20020310_i0Ia.png"*/
 }

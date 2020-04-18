@@ -1,3 +1,4 @@
+inside of mouth:400000
 CHARACTERS:
 elliot:
 hair:775013 (2002)
@@ -12,6 +13,9 @@ hair:850085 (2002)
 skin:f8e7d6 (2002)
 shirt:keep the same (2002)
 overshirt:6bbdfe (2002)
+jacket:085a15 (2002)
+other part of jacket, and tuke:038b96 (2002)
+other part of tuke, and scarf and mittens:8b8bf5 (2002)
 belt buckle:ffc600 (2002)
 pants:f7ad73 (2002)
 shoes: keep the same (2002,sketchbook)
@@ -21,8 +25,15 @@ hair:ffff42 (2002)
 skin:ffe7bd (2002)
 shirt:ff7b7b (2002)
 jacket:ca00ca (2002)
+jacket part 2:6e006e (2002)
 pants:c3beff (2002)
 shoes:unknown
+
+grace:
+hair:302b28 (2002-02-17)
+skin:d68e74
+hair tie:3fab04
+trench coat:dca671
 
 dr germahn:
 skin:f7de9c (2002-07-28 sketchbook)
@@ -36,7 +47,6 @@ shirt:bdffbd
 science teacher:
 hair:9e7b05 (2002-12-14)
 skin:fae7bf
-tongue:400000
 shirt:98fb9c
 belt buckle:808000
 pants and tie:0000c0
@@ -50,6 +60,19 @@ goo:004101
 goo trail:08bd00 (2002-02-10)
 goo eyes:86ff84
 
+theater clerk:
+hair:ffff02 (2002-10-13 sketchbook)
+skin:f4e0bb
+
+mr. verres:
+hair:0000c4 (2002-02-17)
+skin:f7eada
+pants:094682
+
+jeremy:
+body:c0b282 (2002-07-04 sketchbook)
+spines:e4e0d2
+
 OBJECTS:
 hammer handle:947972 (2002-11-05 sketchbook)
 hammer head: gray (keep the same)
@@ -61,6 +84,19 @@ wood:845918 (2002-02-24)
 net:a8a09d (2002-09-29 sketchbook)
 
 fire:gradient from fe3308 to ffd231 (2002-02-10)
+
+principal desk:825f4c (2002-06-02)
+"PRINCIPAL" nameplate:c8b79c
+
+night sky: gradient from 2a2a2a to 656565 (2002-02-17)
+
+elliot's car: completely gray
+
+grass at night:004100 (2002-02-17)
+
+tedd's house chair:08be1c (2002-02-17)
+tedd's house couch:ff6b63 (2002-05-05)
+tedd's house front door:414100 (2002-02-17)
 
 BACKGROUNDS:
 moperville north ceiling:d5d5b3 (2002-09-23)
@@ -74,4 +110,6 @@ ffc0c0
 ffc0ff
 ffffc0
 
-dramatic backgrounds from goo fight: f00000,ff8a84,700000
+dramatic backgrounds from goo fight: f00000,ff8a84,700000,ffda85
+
+800000 (2002-03-24)
