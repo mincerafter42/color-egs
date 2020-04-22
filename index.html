@@ -1,29 +1,8 @@
-<title class="title">Color El Goonish Shive</title>
+<title class="title">Color El Goonish Shive home page</title>
 <div style="width:700px;margin:0 auto;text-align:center">
-<h1 style="float:left" class="title">Color El Goonish Shive</h1>
+<h1 style="float:left" class="title">Color El Goonish Shive home page</h1>
 <a href="https://egscomics.com" style="float:right">El Goonish Shive</a><br><a href="https://github.com/mincerafter42/color-egs" style="float:right">Color EGS on Github</a>
-<br>
-<a class="next">
-<img id="comic" style="clear:both;display:block">
-</a>
-<br>
-<a id="previous" style="float:left">Previous</a><a class="next" style="float:right">Next</a>
-<br>
-See a problem or a solution with the coloring? Check if it's on <a href="https://github.com/mincerafter42/color-egs/issues">the Github issues page.</a>
+<div style="clear:both">
+<noscript>You need Javascript enabled to view Color El Goonish Shive.</noscript>
+<a href="./1"><h2>Start reading Color EGS here</h2></a>
 </div>
-<noscript>You need Javascript enabled to view this page.</noscript>
-<script src="coloredOriginally.js"></script>
-<script>
-function addLeadingZeros(NUMBER) { //function that adds leading zeros to make a number 5 digits long
-var i=String(NUMBER);
-while (i.length<5) {i="0"+i}
-return i;
-}
-var comicNumber=window.location.search?window.location.search.slice(1):1; //gets the comic number, sets it to 1 if there is none
-document.getElementById("comic").src=alreadyColored[comicNumber]?"https://egscomics.com/comics/"+alreadyColored[comicNumber]:"colored/"+addLeadingZeros(comicNumber)+".png"; //if a colored version is on the egscomics.com website, display it, otherwise, display the local colored version
-if (comicNumber>1) {document.getElementById("previous").href="./index.html?"+(comicNumber-1);} //set link for previous comic, unless this is the earliest comic
-for (var i=0;i<2;i++) { //there are two elements showing the title and two elements linking to the next comic
-document.getElementsByClassName("next")[i].href="./index.html?"+(comicNumber-(-1)); //set link for next comic
-document.getElementsByClassName("title")[i].innerText+=" #"+comicNumber; //adds comic number to page title
-}
-</script>
