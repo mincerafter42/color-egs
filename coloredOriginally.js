@@ -10,5 +10,8 @@ var alreadyColored={
 42:"20020303_lY9t.png",
 49:"20020310_i0Ia.png",
 56:"20020317_Yv7m.png",
-63:"20020324_jNuc.png"
+63:"20020324_jNuc.png",
+70:"20020331_tvn7.png",
+73:"20020404_vqW1.gif",
+74:"20020405_PVQJ.gif"
 }
