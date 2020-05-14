@@ -1,4 +1,5 @@
 inside of mouth:400000
+tongue: 800000
 CHARACTERS:
 elliot:
 hair:775013 (2002)
@@ -33,7 +34,29 @@ grace:
 hair:302b28 (2002-02-17)
 skin:d68e74
 hair tie:3fab04
-trench coat:dca671
+shirt:004200 (2002-03-31)
+coat:c8a57f (2002-03-10)
+trench coat:dca671 (only shown for a short time)
+
+squirrelly hair:302c29 (2002-03-10)
+skin:825d4e (well actually it's a kind of lighter fur sort of deal)
+eyes:390f0a (2002-09-11)
+
+justin:
+hair:fecf1c (2002-04-07)
+skin:ffe3b2
+martial arts robe:820082
+earring:keep the same (2002-04-14)
+
+nanase:
+hair:fe0000 (2002-04-07)
+skin:f2cac8
+eyes:00a300
+
+greg:
+skin: 734208 (2002-04-14)
+shirt: 004200
+edges of robe and "G": 807e01
 
 dr germahn:
 skin:f7de9c (2002-07-28 sketchbook)
@@ -41,8 +64,10 @@ shirt: bdbdf7 (same)
 
 amanda:
 hair:ffffbd
+hair tie:00baba
 skin:f7e7d6
 shirt:bdffbd
+pants:848400
 
 science teacher:
 hair:9e7b05 (2002-12-14)
@@ -72,9 +97,13 @@ pants:094682
 jeremy:
 body:c0b282 (2002-07-04 sketchbook)
 spines:e4e0d2
+inner ear:834b4b
+eye whites:c0ffc0
+eye irises:404000
+nose:634545
 
 OBJECTS:
-hammer handle:947972 (2002-11-05 sketchbook)
+hammer handle:836335 (2002-03-24)
 hammer head: gray (keep the same)
 
 bricks:734f2b (2002-10-20 sketchbook)
@@ -101,6 +130,10 @@ tedd's house front door:414100 (2002-02-17)
 BACKGROUNDS:
 moperville north ceiling:d5d5b3 (2002-09-23)
 wall:efefe3
+
+dojo wall & ceiling: e2e2e2 (2002-04-07)
+dojo carpet: ff4040
+uncarpeted floor: 8e7762
 
 background colors: (used until 2002-03-03)
 c0c0ff
