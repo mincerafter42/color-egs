@@ -1,0 +1,29 @@
+div.data {
+width:700px;
+margin:0 auto;
+text-align:center;
+background-color:white;
+border-radius:7px;
+padding:10px;
+}
+
+body {
+background-color:#346;
+font-family:sans-serif;
+}
+
+h1.title {
+float:left;
+}
+
+a.topmenu {
+float:right;
+}
+
+#previous {
+float:left;
+}
+
+#next {
+float:right;
+}

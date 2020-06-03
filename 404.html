@@ -1,14 +1,16 @@
+<link href="main.css" rel="stylesheet">
 <title class="title">Color El Goonish Shive</title>
-<div style="width:700px;margin:0 auto;text-align:center">
+<div class="data">
 <noscript>You need Javascript enabled to view Color El Goonish Shive.</noscript>
-<h1 style="float:left" class="title">Color El Goonish Shive</h1>
-<a href="https://egscomics.com" style="float:right">El Goonish Shive</a><br><a href="https://github.com/mincerafter42/color-egs" style="float:right">Color EGS on Github</a>
-<br>
+<h1 class="title">Color El Goonish Shive</h1>
+<a href="https://egscomics.com" class="topmenu">El Goonish Shive</a><br>
+<a href="https://github.com/mincerafter42/color-egs" class="topmenu">Color EGS on Github</a><br>
+<a href="/" class="topmenu">Color EGS index page</a><br>
 <a class="next">
 <img id="comic" style="clear:both;display:block">
 </a>
 <br>
-<a id="previous" style="float:left">Previous</a><a class="next" style="float:right">Next</a>
+<a id="previous">Previous</a><a id="next" class="next">Next</a>
 <br>
 See a problem or a solution with the coloring? Check if it's on <a href="https://github.com/mincerafter42/color-egs/issues">the Github issues page.</a>
 </div>
@@ -19,13 +21,15 @@ var i=String(NUMBER);
 while (i.length<5) {i="0"+i}
 return i;
 }
-var comicNumber=Math.round(Number(window.location.pathname.slice(1))) //gets the comic number
+function displayComic(comicNumber) {
 if (comicNumber>0) { //only show the comic if the comic number is actually a number
 document.getElementById("comic").src=alreadyColored[comicNumber]?"https://egscomics.com/comics/"+alreadyColored[comicNumber]:"colored/"+addLeadingZeros(comicNumber)+".png"; //if a colored version is on the egscomics.com website, display it, otherwise, display the local colored version
 if (comicNumber>1) {document.getElementById("previous").href="./"+(comicNumber-1);} //set link for previous comic, unless this is the earliest comic
 for (var i=0;i<2;i++) { //there are two elements showing the title and two elements linking to the next comic
 document.getElementsByClassName("next")[i].href="./"+(comicNumber-(-1)); //set link for next comic
-document.getElementsByClassName("title")[i].innerText+=" #"+comicNumber; //adds comic number to page title
+document.getElementsByClassName("title")[i].innerText="Color El Goonish Shive #"+comicNumber; //adds comic number to page title
 }
 }
+}
+displayComic(Math.round(Number(window.location.pathname.slice(1))))
 </script>
