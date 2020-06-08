@@ -27,3 +27,21 @@ float:left;
 #next {
 float:right;
 }
+
+.comicButton {
+border-color:#35579f;
+border-style:outset;
+background-color:#5989ee;
+border-radius:20px;
+color:white;
+padding:7px;
+}
+
+.comicButton:disabled {
+color:#fff7;
+}
+
+.comicButton:hover:enabled {
+cursor:pointer;
+border-style:inset;
+}
