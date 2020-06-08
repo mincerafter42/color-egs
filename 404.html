@@ -9,9 +9,8 @@
 <img id="comic" onclick='comicNumber++;displayComic(comicNumber)' style="clear:both;display:block;cursor:pointer">
 <br>
 <button id="previous" class="comicButton" type="button" onclick='comicNumber--;displayComic(comicNumber)'>Previous</button>
-<span><label for="comicJump">Go to comic</label> <input type="number" id="comicJump" min=1 max=99999> <button type="button" onclick='if (document.getElementById("comicJump").value) {comicNumber=document.getElementById("comicJump").value;displayComic(comicNumber)}'>Go</button></span>
 <button id="next" class="comicButton" type="button" onclick='comicNumber++;displayComic(comicNumber)'>Next</button>
-<!--<a id="previous">Previous</a><a id="next" class="next">Next</a>-->
+<span><label for="comicJump">Go to comic</label> <input type="number" id="comicJump" min=1 max=99999> <button type="button" onclick='if (document.getElementById("comicJump").value) {comicNumber=document.getElementById("comicJump").value;displayComic(comicNumber)}'>Go</button></span>
 <br>
 <div style="clear:both;margin-top:20px">See a problem or a solution with the coloring? Check if it's on <a href="https://github.com/mincerafter42/color-egs/issues">the Github issues page.</a></div>
 </div>
