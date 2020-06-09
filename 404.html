@@ -2,15 +2,21 @@
 <title class="title">Color El Goonish Shive</title>
 <div class="data">
 <noscript>You need Javascript enabled to view Color El Goonish Shive.</noscript>
+<header>
 <h1 class="title">Color El Goonish Shive</h1>
+<nav>
 <a href="https://egscomics.com" class="topmenu">El Goonish Shive</a><br>
 <a href="https://github.com/mincerafter42/color-egs" class="topmenu">Color EGS on Github</a><br>
 <a href="/" class="topmenu">Color EGS index page</a><br>
+</nav>
+</header>
 <img id="comic" onclick='comicNumber++;displayComic(comicNumber)' style="clear:both;display:block;cursor:pointer">
 <br>
+<nav>
 <button id="previous" class="comicButton" type="button" onclick='comicNumber--;displayComic(comicNumber)'>Previous</button>
 <button id="next" class="comicButton" type="button" onclick='comicNumber++;displayComic(comicNumber)'>Next</button>
-<span><label for="comicJump">Go to comic</label> <input type="number" id="comicJump" min=1 max=99999> <button type="button" onclick='if (document.getElementById("comicJump").value) {comicNumber=document.getElementById("comicJump").value;displayComic(comicNumber)}'>Go</button></span>
+<span><label for="comicJump">Go to comic</label> <input type="number" id="comicJump" min=1 max=99999> <button type="button" onclick='if (document.getElementById("comicJump").value>0) {comicNumber=Number(document.getElementById("comicJump").value);displayComic(comicNumber)}'>Go</button></span>
+</nav>
 <br>
 <div style="clear:both;margin-top:20px">See a problem or a solution with the coloring? Check if it's on <a href="https://github.com/mincerafter42/color-egs/issues">the Github issues page.</a></div>
 </div>
@@ -24,9 +30,7 @@ return i;
 function displayComic(comicNumber,noPushState) {
 if (comicNumber>0) { //only show the comic if the comic number is actually a number
 document.getElementById("comic").src=alreadyColored[comicNumber]?"https://egscomics.com/comics/"+alreadyColored[comicNumber]:"colored/"+addLeadingZeros(comicNumber)+".png"; //if a colored version is on the egscomics.com website, display it, otherwise, display the local colored version
-if (comicNumber>1) {document.getElementById("previous").href="./"+(comicNumber-1);} //set link for previous comic, unless this is the earliest comic
-for (var i=0;i<2;i++) { //there are two elements showing the title and two elements linking to the next comic
-//document.getElementsByClassName("next")[i].href="./"+(comicNumber-(-1)); //set link for next comic
+for (var i=0;i<2;i++) { //there are two elements showing the title
 document.getElementsByClassName("title")[i].innerText="Color El Goonish Shive #"+comicNumber; //adds comic number to page title
 }
 if (comicNumber==1) { //disables the Previous button if this is comic #1, else enables it
@@ -35,7 +39,7 @@ document.getElementById("previous").disabled=1;
 document.getElementById("previous").removeAttribute("disabled");
 }
 if (noPushState!=true) { //(leave this part last for debugging, as it doesn't work in local files)
-window.history.pushState({},"","./"+comicNumber); //adds comic to history
+window.history.pushState({},"Color El Goonish Shive #"+comicNumber,"./"+comicNumber); //adds comic to history
 }
 }
 }

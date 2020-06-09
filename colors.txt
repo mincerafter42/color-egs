@@ -2,12 +2,14 @@ inside of mouth:400000
 tongue: 800000
 CHARACTERS:
 elliot:
-hair:775013 (2002)
+hair:6b4a18 (2002-04-16)
 skin:f8dea5 (2002)
 shirt:keep the same (2002)
 jacket:281807 (2002)
 pants:005aad (2002)
 shoes:keep the same (2002)
+martial arts top:000039 (2002-04-20)
+edge of martial arts pants:0000c6 (2002-04-15)
 
 tedd:
 hair:850085 (2002)
@@ -37,6 +39,7 @@ hair tie:3fab04
 shirt:004200 (2002-03-31)
 coat:c8a57f (2002-03-10)
 trench coat:dca671 (only shown for a short time)
+pants: keep the same (2002-03-31)
 
 squirrelly hair:302c29 (2002-03-10)
 skin:825d4e (well actually it's a kind of lighter fur sort of deal)
@@ -102,6 +105,11 @@ eye whites:c0ffc0
 eye irises:404000
 nose:634545
 
+demonic duck:
+body:ff0000 (2002-09-06)
+eyes:ffff80
+bill & feet:ffff00
+
 OBJECTS:
 hammer handle:836335 (2002-03-24)
 hammer head: gray (keep the same)
@@ -118,6 +126,7 @@ principal desk:825f4c (2002-06-02)
 "PRINCIPAL" nameplate:c8b79c
 
 night sky: gradient from 2a2a2a to 656565 (2002-02-17)
+212121 (2002-04-28)
 
 elliot's car: completely gray
 
@@ -146,3 +155,6 @@ ffffc0
 dramatic backgrounds from goo fight: f00000,ff8a84,700000,ffda85
 
 800000 (2002-03-24)
+
+old colors:
+elliot hair #1:775013 (2002)
