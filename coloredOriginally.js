@@ -22,7 +22,6 @@ var alreadyColored={
 88:"20020418_nPTS.gif",
 89:"20020419_bADK.gif",
 90:"20020420_wNtI.gif",
-91:"20020421_8zhj.gif",
 98:"20020428_b3Ks.gif",
 100:"20020430_aGHw.gif",
 105:"20020505_D1gD.gif"
