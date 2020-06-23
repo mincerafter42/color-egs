@@ -45,6 +45,10 @@ squirrelly hair:302c29 (2002-03-10)
 skin:825d4e (well actually it's a kind of lighter fur sort of deal)
 eyes:390f0a (2002-09-11)
 
+cat fur (darker):312929 (2002-05-12)
+cat fur (lighter):845a4a
+cat eyes: 004200
+
 justin:
 hair:fecf1c (2002-04-07)
 skin:ffe3b2
@@ -135,6 +139,11 @@ grass at night:004100 (2002-02-17)
 tedd's house chair:08be1c (2002-02-17)
 tedd's house couch:ff6b63 (2002-05-05)
 tedd's house front door:414100 (2002-02-17)
+tedd's house basement wall: dedede (2002-05-12)
+tedd's house wall:ffffc0
+
+tf gun colored parts and beam: 00ff00 (2002-05-15)
+tf gun beam part 2: 80ff80
 
 BACKGROUNDS:
 moperville north ceiling:d5d5b3 (2002-09-23)
