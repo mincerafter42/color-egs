@@ -16,11 +16,13 @@
 <button id="previous" class="comicButton" type="button" onclick='comicNumber--;displayComic(comicNumber)'>Previous</button>
 <button id="next" class="comicButton" type="button" onclick='comicNumber++;displayComic(comicNumber)'>Next</button>
 <span><label for="comicJump">Go to comic</label> <input type="number" id="comicJump" min=1 max=99999> <button type="button" onclick='if (document.getElementById("comicJump").value>0) {comicNumber=Number(document.getElementById("comicJump").value);displayComic(comicNumber)}'>Go</button></span>
+<br><br>
+<button class="comicButton" type="button" onclick='window.open(comicURL(comicNumber))'>View this comic on egscomics.com</button>
 </nav>
-<br>
 <div style="clear:both;margin-top:20px">See a problem or a solution with the coloring? Check if it's on <a href="https://github.com/mincerafter42/color-egs/issues">the Github issues page.</a></div>
 </div>
 <script src="coloredOriginally.js"></script>
+<script src="comicURLFromIndex.js"></script>
 <script>
 function addLeadingZeros(NUMBER) { //function that adds leading zeros to make a number 5 digits long
 var i=String(NUMBER);
@@ -39,7 +41,7 @@ document.getElementById("previous").disabled=1;
 document.getElementById("previous").removeAttribute("disabled");
 }
 if (noPushState!=true) { //(leave this part last for debugging, as it doesn't work in local files)
-window.history.pushState({},"Color El Goonish Shive #"+comicNumber,"./"+comicNumber); //adds comic to history
+window.history.pushState({comicNumber:comicNumber},"","./"+comicNumber); //adds comic to history
 }
 }
 }
