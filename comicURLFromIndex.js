@@ -1,20 +1,40 @@
-//var temp1=Array.from(document.getElementsByName("comic")[0].children, x=>x.innerText=="Select a comic..."||new Date(x.innerText.split(" -")[0]).toISOString().split("T")[0])
-//running the previous line on egscomics.com/comic/archvie will give actual master list of comic dates (works in my timezone)
-function everyDay(index,offset) {return Date.UTC(2002,0,index+offset)}
-function everyDayExceptSun(index,inWeekShift,offset) {return Date.UTC(2002,0,offset+(Math.floor((index-inWeekShift)/6)*7)+((index-inWeekShift)%6))}
-function MonWedFri(index,inWeekShift,offset) {return Date.UTC(2001,4,offset+(2*((index-inWeekShift)%3)+(7*Math.floor((index-inWeekShift)/3))))}
+function everyDay(I) {return Date.UTC(99,36,I)}
+function MonWedFri(I,inWeekShift,offset) {return Date.UTC(99,23,offset+(2*((I-inWeekShift)%3)+(7*Math.floor((I-inWeekShift)/3))))}
 
-function comicURL(index) {
-return "https://egscomics.com?date="+new Date(
+function dateURL(dateUTC) {return "?date="+new Date(dateUTC).toISOString().split("T")[0]}
+function idURL(I,offset) {return "?id="+(I-([13,16,16][I-1028]||[-1,1][I-1239]||[-1,1][I-1766]||[-4,-4,-1][I-2079]||offset))}
+function slugURL(prefix,id,idLength) {return "/"+prefix+"-"+addLeadingZeros(id,idLength)}
 
-index<162?everyDay(index,20):
-index<171?everyDay(index,24):
-index<193?everyDayExceptSun(index,3,0):
-index<208?MonWedFri(index,1,21): //breaks on comic 208
-null
-
-).toISOString().split("T")[0]
+function comicURL(I) {
+return "https://egscomics.com/comic"+(
+I<171?dateURL(everyDay(I+20)):
+I<557?idURL(I,0):
+I<584?dateURL(MonWedFri(I,2,4)):
+I<815?idURL(I,6):
+I<832?dateURL(MonWedFri(I,2,228)):
+I<883?idURL(I,15):
+I<893?idURL(I,-10):
+I<918?idURL(I,25):
+I<987?idURL(I,9):
+I<993?idURL(I,84):
+I<1051?idURL(I,15):
+I<2004?idURL(I,0):
+I<2010?idURL(I,-1):
+I<2038?idURL(I,-2):
+I<2139?idURL(I,-3):
+I<2145?dateURL(MonWedFri(I,2,529)):
+I<2189?idURL(I,-3):
+I<2199?slugURL("question-mark",I-2188,2):
+I<2243?idURL(I,7):
+I<2436?idURL(I,-3):
+I<2513?dateURL(MonWedFri(I,2,557)):
+I<2527?slugURL("sister3",I-2216,3):
+I<2560?dateURL(MonWedFri(I,1,578)):
+I<2609?slugURL("tsos",I-2559,2):
+I<2643?dateURL(MonWedFri(I,2,592)):
+I<2706?slugURL("party",I-2624,3):
+I<2708?"/party-083"+(I==2707?"b":""):
+slugURL("party",I-2624,3) //will work until the party arc ends or has another inconsistent URL
+//"/1969-12-31"
+)
 }
-
-//for (var i=1;i<temp1.length;i++) {if (comicURL(i)!="https://egscomics.com?date="+temp1[i]) break;} i;
-//above code checks at which comic comicURL fails, assuming temp1 is already set to the master list of comics

@@ -24,14 +24,14 @@
 <script src="coloredOriginally.js"></script>
 <script src="comicURLFromIndex.js"></script>
 <script>
-function addLeadingZeros(NUMBER) { //function that adds leading zeros to make a number 5 digits long
+function addLeadingZeros(NUMBER,LENGTH) { //function that adds leading zeros to make a number LENGTH digits long
 var i=String(NUMBER);
-while (i.length<5) {i="0"+i}
+while (i.length<LENGTH) {i="0"+i}
 return i;
 }
 function displayComic(comicNumber,noPushState) {
 if (comicNumber>0) { //only show the comic if the comic number is actually a number
-document.getElementById("comic").src=alreadyColored[comicNumber]?"https://egscomics.com/comics/"+alreadyColored[comicNumber]:"colored/"+addLeadingZeros(comicNumber)+".png"; //if a colored version is on the egscomics.com website, display it, otherwise, display the local colored version
+document.getElementById("comic").src=alreadyColored[comicNumber]?"https://egscomics.com/comics/"+alreadyColored[comicNumber]:"colored/"+addLeadingZeros(comicNumber,5)+".png"; //if a colored version is on the egscomics.com website, display it, otherwise, display the local colored version
 for (var i=0;i<2;i++) { //there are two elements showing the title
 document.getElementsByClassName("title")[i].innerText="Color El Goonish Shive #"+comicNumber; //adds comic number to page title
 }
