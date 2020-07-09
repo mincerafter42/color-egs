@@ -49,6 +49,11 @@ cat fur (darker):312929 (2002-05-12)
 cat fur (lighter):845a4a
 cat eyes: 004200
 
+jeremy grace hair & spines: 8a867e (2002-05-15)
+rest of jeremy grace: a18868
+inner ear: 5a3c3a
+eye whites: c0ffc0 (2002-05-15, and 2004-05-23 sketchbook)
+
 justin:
 hair:fecf1c (2002-04-07)
 skin:ffe3b2
@@ -120,7 +125,7 @@ hammer head: gray (keep the same)
 
 bricks:734f2b (2002-10-20 sketchbook)
 
-wood:845918 (2002-02-24)
+wood:734f09 (2002-05-19)
 
 net:a8a09d (2002-09-29 sketchbook)
 
@@ -133,6 +138,8 @@ night sky: gradient from 2a2a2a to 656565 (2002-02-17)
 212121 (2002-04-28)
 
 elliot's car: completely gray
+elliot's blanket: a6003a (2008-06-04 with brightness adjusted)
+elliot's mattress: d06c8f (actually Ellen's mattress, but assumed to be the same because blankets match)
 
 grass at night:004100 (2002-02-17)
 
@@ -141,6 +148,17 @@ tedd's house couch:ff6b63 (2002-05-05)
 tedd's house front door:414100 (2002-02-17)
 tedd's house basement wall: dedede (2002-05-12)
 tedd's house wall:ffffc0
+tedd's pillow: a591c5 (2008-06-06)
+tedd's mattress: c6b6da
+tedd's blanket: 8055ae
+
+grace's mattress: 737393 (2014-03-26 with brightness adjusted)
+grace's blanket: 46466e
+grace's bed: 5a5349
+grace's lamp: b2a082
+grace's lamp's lampshade: c8c3cb
+grace's room wall: a5aa9b
+grace's room floor: 736749
 
 tf gun colored parts and beam: 00ff00 (2002-05-15)
 tf gun beam part 2: 80ff80
